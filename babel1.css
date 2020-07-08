@@ -1,7 +1,28 @@
+.menu {
+    background-color: violet;
+}
 
-body{
-    width: 100vw;
-    background: -webkit-linear-gradient(bottom right,#CECECE,#F128DD ) ;
-    display: flex;
-    flex-direction: column;
+.menu li{
+    display: inline-block;
+    font-size: 30px;
+}
+.menu a{
+    display: block ;
+    width: 110px ;
+    padding: 5px 0 ; /* Ajout de marges internes */
+    text-align: center ; /* Centrage du texte à l'intérieur des boutons */
+    transform:scale(2.3);
+    text-decoration: none ; /* Suppression du soulignement des liens */
+    margin: 10px ; /* Espacements des boutons */
+    border-radius: 5px; /* Ajout d'arrondis pour les boutons */
+}
+.titre{
+    text-align: center;
+   font-size: 30px;
+
+}
+.bars{
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
