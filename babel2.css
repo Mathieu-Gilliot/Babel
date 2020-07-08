@@ -1,8 +1,16 @@
-body {
-  width: 100vw;
-  background: -webkit-linear-gradient(bottom right, #CECECE, #F128DD);
+header {
+  flex: 0.5;
+}
+
+#mainframe #categories {
   display: flex;
-  flex-direction: column;
+}
+#mainframe #categories #howlhelp {
+  display: block;
+  flex: 0.5;
+}
+#mainframe #categories #menu {
+  flex: 1;
 }
 
 /*# sourceMappingURL=babel2.css.map */
