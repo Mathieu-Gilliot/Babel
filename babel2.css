@@ -1,0 +1,8 @@
+body {
+  width: 100vw;
+  background: -webkit-linear-gradient(bottom right, #CECECE, #F128DD);
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=babel2.css.map */
