@@ -1,7 +1,11 @@
+
+header{
+    background-color: violet;
+}
 .menu { 
     width: 100%;
     height: 100%;
-    background-color: violet;
+   
 }
 
 .menu li{
@@ -32,8 +36,9 @@
     border-radius: 10px; /* Ajout d'arrondis pour les boutons */
     
 }
-.footer{
 
+
+footer{
     background-color: violet;
     position:absolute;
     bottom:0;
@@ -41,19 +46,39 @@
     padding-top:50px;
     height:100px;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     font-size: 20px;
-
     }
+
+footer ol {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+   
+}
 
 .gauche{
     width: 30%;
     height: 100%;
-    display: flex;
-    justify-content:column;
-    align-items: center;
+    text-decoration: none ;
+  
 }
+
 .centre{
-   
-   text-align: center;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+.droite{
+    flex-direction: row;
+    width: 30%;
+    height: 100%;
+  
+} 
+.droite img{
+
+    width: 60%;
+    height: 70%;
 }
