@@ -1,16 +1,31 @@
 header {
   flex: 0.5;
+  background: url("images/music.png") no-repeat;
 }
 
 #mainframe #categories {
   display: flex;
 }
 #mainframe #categories #howlhelp {
-  display: block;
+  display: flex;
   flex: 0.5;
+  align-items: center;
+}
+#mainframe #categories #howlhelp > img {
+  height: 35%;
+}
+#mainframe #categories #howlhelp > img:nth-child(2) {
+  align-self: flex-start;
+  height: 40%;
 }
 #mainframe #categories #menu {
   flex: 1;
+}
+#mainframe #categories #menu a {
+  flex: 0.1;
+}
+#mainframe #categories #menu a > img {
+  height: 10%;
 }
 
 /*# sourceMappingURL=babel2.css.map */
