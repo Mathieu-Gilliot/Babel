@@ -1,12 +1,19 @@
 
+body
+{
+    background: -webkit-linear-gradient(top left,rgba(241,40,221,0.2)70%, rgba(206,206,206,0.5)30%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 header{
 
     background-color: violet;
 }
-.menu { 
+.menu {
     width: 100%;
     height: 100%;
-   
+
 }
 
 .menu li{
@@ -35,7 +42,7 @@ header{
 }
 .imput{
     border-radius: 10px; /* Ajout d'arrondis pour les boutons */
-    
+
 }
 
 
@@ -56,16 +63,20 @@ footer ol {
     width: 100%;
     height: 100%;
     list-style: none;
+<<<<<<< HEAD
 }
 a{
     text-decoration: none;
+=======
+
+>>>>>>> 6cf12a9dd38cf7c59fd9b90f8d863b00e2b0901c
 }
 
 .gauche{
     width: 30%;
     height: 100%;
     text-decoration: none ;
-  
+
 }
 
 .centre{
@@ -80,10 +91,14 @@ a{
     flex-direction: row;
     width: 30%;
     height: 100%;
+<<<<<<< HEAD
   
 } 
 .droite h3{
     position:absolute;
+=======
+
+>>>>>>> 6cf12a9dd38cf7c59fd9b90f8d863b00e2b0901c
 }
 .droite img{
     

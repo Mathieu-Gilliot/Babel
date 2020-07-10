@@ -1,6 +1,6 @@
 header {
   flex: 0.5;
-  background: url("images/music.png") no-repeat;
+  background: violet, url("images/music.png") no-repeat;
 }
 
 #mainframe #categories {
@@ -20,6 +20,7 @@ header {
 }
 #mainframe #categories #menu {
   flex: 1;
+  width: 60%;
 }
 #mainframe #categories #menu a {
   flex: 0.1;
