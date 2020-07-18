@@ -145,12 +145,12 @@ header {
     text-shadow: black 1px 1px 1px;
     width: 100%;
 }
-.bars {
+.profil{
     text-align: end;
     font-size: 6rem;
     align-self: center;
     color: rgb(223, 223, 223);
-    position: fixed;
+    position: absolute;
     right: 5%;
 }
 input {
