@@ -1,0 +1,33 @@
+#selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+    .artiste {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+        .portrait {
+            color: white;
+            display: flex;
+            align-items: center;
+            h2{
+                font-size: 8rem;
+                margin-left: 20%;
+                text-decoration: none;
+            }
+        }
+        .caroussel{
+            align-self: center;
+            width:40%;
+            height: 40vh;
+            background: rgb(71,4,68);
+            background: linear-gradient(112deg, rgba(71,4,68,1) 16%, rgba(174,58,180,1) 53%, rgba(253,29,234,1) 80%, rgba(252,69,208,0.7880194314053747) 94%);
+            display:none;
+
+        }
+        .encart{
+            display:block;
+        }
+    }
+}
