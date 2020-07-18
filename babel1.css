@@ -1,60 +1,174 @@
-
-body
-{
-    background: -webkit-linear-gradient(top left,rgba(241,40,221,0.2)70%, rgba(206,206,206,0.5)30%);
-
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
 }
-header{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+ul {
+    list-style: none;
+}
+button,
+input,
+select,
+textarea {
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+iframe {
+    border: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td,
+th {
+    padding: 0;
+}
+td:not([align]),
+th:not([align]) {
+    text-align: left;
+}
 
-    background-color: violet;
+@font-face {
+    font-family: 'acmeregular';
+    src: url('police/Acme-Regular-webfont.eot');
+    src: url('police/Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/Acme-Regular-webfont.woff2') format('woff2'),
+         url('police/Acme-Regular-webfont.woff') format('woff'),
+         url('police/Acme-Regular-webfont.ttf') format('truetype'),
+         url('police/Acme-Regular-webfont.svg#acmeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Général*/
+html {
+    font-size: 1vh; /*définition du rem */
+}
+
+body {
+    width:100vw;
+    height:100vh;
+    background: rgb(131,58,180);
+    background: linear-gradient(112deg, rgb(136, 35, 102) 0%, rgba(253, 29, 234, 0.699) 50%, rgba(252, 69, 209, 0.589) 100%);
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;  /* Suppression du soulignement des liens */
+}
+a:visited{
+    color:rgb(223, 223, 223);
+}
+
+
+/*Barre de navigation*/
+header {
+    border-radius: 30px;
+    flex:0.5;
+    top:0;
 }
 .menu {
     width: 100%;
     height: 100%;
-
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding:0.5%;
 }
-
-.menu li{
+.menu ul {
+    display: flex;
+    justify-content: space-around; /*Espacement des boutons*/
+    width:90%;
+    padding-bottom: 2%;
+    padding-top:2%;
+    margin-left:5%;
+    color: rgb(223, 223, 223)
+}
+.menu li {
     display: inline-block;
-    font-size: 30px;
-}
-.menu a{
-    display: block ;
-    width: 110px ;
-    padding: 5px 0 ; /* Ajout de marges internes */
-    text-align: center ; /* Centrage du texte à l'intérieur des boutons */
-    transform:scale(2.3);
-    text-decoration: none ; /* Suppression du soulignement des liens */
-    margin: 10px ; /* Espacements des boutons */
-    border-radius: 5px; /* Ajout d'arrondis pour les boutons */
-}
-.titre{
-    text-align: center;
-   font-size: 30px;
-
-}
-.bars{
-    display:flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-.imput{
-    border-radius: 10px; /* Ajout d'arrondis pour les boutons */
-
+    font-size: 6rem; /*Définition de la taille des boutons*/
+    width: 10%; /*Définition de la taille des boutons*/
 }
 
-
-footer{
-    background-color: violet;
-    position:absolute;
-    bottom:0;
+#search{
+    align-self:center;
+}
+.titre {
+    text-align:center;
+    font-size: 8rem;
+    font-family: 'acmeregular',sans-serif;
+    color: azure;
+    text-shadow: black 1px 1px 1px;
     width:100%;
-    padding-top:50px;
-    height:100px;
+
+}
+.bars {
+    text-align: end;
+    font-size: 6rem;
+    align-self:center;
+    color:rgb(223, 223, 223);
+    position: fixed;
+    right:5%;
+}
+input {
+    border-radius: 10px; /* Ajout d'arrondis pour les boutons */
+    margin-bottom:1%;
+    text-indent:5%;
+}
+
+/*Pied de page*/
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
     text-decoration: none;
     display: flex;
     font-size: 20px;
-    }
+    flex:0.25
+}
 
 footer ol {
     display: flex;
@@ -63,43 +177,41 @@ footer ol {
     list-style: none;
 }
 
-a {
+.gauche {
+    width: 30%;
+    height: 100%;
     text-decoration: none;
 }
 
-.gauche{
-    width: 30%;
-    height: 100%;
-    text-decoration: none ;
-
-}
-
-.centre{
+.centre {
     width: 40%;
     height: 100%;
     text-align: center;
     text-decoration: none;
 }
-.droite{
+.droite {
     margin-left: 70%;
     position: absolute;
     flex-direction: row;
     width: 30%;
     height: 100%;
-} 
-
-.droite h3{
-    position:absolute;
 }
 
-.droite img{
+.droite h3 {
+    position: absolute;
+}
 
-    margin-left:28%;
+.droite img {
+    margin-left: 28%;
     width: 40%;
     height: 60%;
 }
-.discussion{
+.discussion {
     width: 40%;
     height: 90%;
-    
+}
+
+/*Section principale*/
+.news{
+    flex:2;
 }
