@@ -11,10 +11,18 @@
             color: white;
             display: flex;
             align-items: center;
-            h2{
+            button{
                 font-size: 8rem;
                 margin-left: 20%;
                 text-decoration: none;
+                color: white;
+                cursor: pointer;
+                background: none;
+                border: none;
+                font-family: "acmeregular", sans-serif;;
+            }
+            button:hover{
+                color: rgb(73, 5, 73);
             }
         }
         .caroussel{
@@ -22,11 +30,10 @@
             width:40%;
             height: 40vh;
             background: rgb(71,4,68);
-            background: linear-gradient(112deg, rgba(71,4,68,1) 16%, rgba(174,58,180,1) 53%, rgba(253,29,234,1) 80%, rgba(252,69,208,0.7880194314053747) 94%);
+            background: linear-gradient(112deg, rgba(71, 4, 68, 0.678) 16%, rgba(174, 58, 180, 0.685) 53%, rgba(253, 29, 234, 0.39) 80%, rgba(252, 69, 209, 0.404) 94%);
             display:none;
-
         }
-        .encart{
+        .show{
             display:block;
         }
     }

@@ -92,12 +92,13 @@ body {
     background: rgb(131, 58, 180);
     background: linear-gradient(
         112deg,
-        rgb(155, 4, 160) 0%,
-        rgba(253, 29, 234, 0.699) 50%,
-        rgba(250, 87, 228, 0.774) 100%
+        rgba(155, 4, 160, 0.767) 0%,
+        rgba(253, 29, 234, 0.507) 50%,
+        rgba(250, 87, 228, 0.411) 100%
     );
     display: flex;
     flex-direction: column;
+    text-shadow: 1px 1px 1px black;
 }
 a {
     text-decoration: none; /* Suppression du soulignement des liens */
@@ -142,7 +143,6 @@ header {
     font-size: 8rem;
     font-family: "acmeregular", sans-serif;
     color: azure;
-    text-shadow: black 1px 1px 1px;
     width: 100%;
 }
 .profil{

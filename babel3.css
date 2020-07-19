@@ -14,20 +14,28 @@
   display: flex;
   align-items: center;
 }
-#selection .artiste .portrait h2 {
+#selection .artiste .portrait button {
   font-size: 8rem;
   margin-left: 20%;
   text-decoration: none;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: "acmeregular", sans-serif;
+}
+#selection .artiste .portrait button:hover {
+  color: #490549;
 }
 #selection .artiste .caroussel {
   align-self: center;
   width: 40%;
   height: 40vh;
   background: #470444;
-  background: linear-gradient(112deg, #470444 16%, #ae3ab4 53%, #fd1dea 80%, rgba(252, 69, 208, 0.7880194314) 94%);
+  background: linear-gradient(112deg, rgba(71, 4, 68, 0.678) 16%, rgba(174, 58, 180, 0.685) 53%, rgba(253, 29, 234, 0.39) 80%, rgba(252, 69, 209, 0.404) 94%);
   display: none;
 }
-#selection .artiste .encart {
+#selection .artiste .show {
   display: block;
 }
 
