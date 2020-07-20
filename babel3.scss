@@ -1,40 +1,61 @@
+@import "libs/mixins.scss";
+
+$primary: white;
+
 #selection {
-    display: flex;
-    flex-direction: column;
+    @include flexcolonne;
     justify-content: space-around;
     padding: 5%;
+    .section_name {
+        color: $primary;
+        font-size: 5rem;
+        align-self: center;
+        font-family: "acmeregular", sans-serif;
+        border: 0.5vh solid $primary;
+        border-radius: 20px;
+        padding: 1vh;
+    }
     .artiste {
-        display: flex;
-        flex-direction: column;
+        @include flexcolonne;
         margin-top: 3%;
         .portrait {
-            color: white;
+            color: $primary;
             display: flex;
             align-items: center;
-            button{
+            button {
                 font-size: 8rem;
                 margin-left: 20%;
                 text-decoration: none;
-                color: white;
+                color: $primary;
                 cursor: pointer;
                 background: none;
                 border: none;
-                font-family: "acmeregular", sans-serif;;
+                font-family: "acmeregular", sans-serif;
             }
-            button:hover{
+            button:hover {
                 color: rgb(73, 5, 73);
             }
+            button:focus {
+                border: none;
+                box-shadow: none;
+            }
         }
-        .caroussel{
+        .caroussel {
             align-self: center;
-            width:40%;
+            width: 40%;
             height: 40vh;
-            background: rgb(71,4,68);
-            background: linear-gradient(112deg, rgba(71, 4, 68, 0.678) 16%, rgba(174, 58, 180, 0.685) 53%, rgba(253, 29, 234, 0.39) 80%, rgba(252, 69, 209, 0.404) 94%);
-            display:none;
+            background: rgb(71, 4, 68);
+            background: linear-gradient(
+                112deg,
+                rgba(71, 4, 68, 0.678) 16%,
+                rgba(174, 58, 180, 0.685) 53%,
+                rgba(253, 29, 234, 0.39) 80%,
+                rgba(252, 69, 209, 0.404) 94%
+            );
+            display: none;
         }
-        .show{
-            display:block;
+        .show {
+            display: block;
         }
     }
 }

@@ -4,6 +4,15 @@
   justify-content: space-around;
   padding: 5%;
 }
+#selection .section_name {
+  color: white;
+  font-size: 5rem;
+  align-self: center;
+  font-family: "acmeregular", sans-serif;
+  border: 0.5vh solid white;
+  border-radius: 20px;
+  padding: 1vh;
+}
 #selection .artiste {
   display: flex;
   flex-direction: column;
@@ -26,6 +35,10 @@
 }
 #selection .artiste .portrait button:hover {
   color: #490549;
+}
+#selection .artiste .portrait button:focus {
+  border: none;
+  box-shadow: none;
 }
 #selection .artiste .caroussel {
   align-self: center;

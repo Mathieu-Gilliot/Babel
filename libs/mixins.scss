@@ -18,3 +18,8 @@
    background:-ms-$type#-gardient$orientation;
 }
 
+@mixin flexcolonne{
+    display: flex;
+    flex-direction: column;
+}
+
