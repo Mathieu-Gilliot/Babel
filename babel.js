@@ -8,3 +8,4 @@ function show(){
     let caroussel= document.querySelector(".exemple");
     caroussel.classList.toggle('show')
 }
+
