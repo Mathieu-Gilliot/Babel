@@ -104,7 +104,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.bouton {
+.boutons {
   border: none;
   background: none;
   color: white;
