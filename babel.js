@@ -9,3 +9,8 @@ function show(){
     caroussel.classList.toggle('show')
 }
 
+// Work in progress
+
+let listlink = document.querySelectorAll("[data-encart]")
+
+let listbuttons = document.querySelectorAll("[data-button]")

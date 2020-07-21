@@ -71,7 +71,8 @@ th:not([align]) {
   text-align: left;
 }
 body {
-  height: 100vh;
+  height: auto;
+  outline: none;
 }
 .musique {
   display: flex;
@@ -109,6 +110,7 @@ body {
   color: white;
   font-size: 3rem;
   margin-bottom: 2rem;
+  outline: none;
 }
 .icones {
   align-items: center;
