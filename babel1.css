@@ -94,8 +94,8 @@ body {
         112deg,
         rgba(155, 4, 160, 0.767) 0%,
         rgba(253, 29, 234, 0.507) 50%,
-        rgba(250, 87, 228, 0.411) 100%
-    );
+        rgba(250, 87, 228, 0.411) 100% );
+    outline: none;
     display: flex;
     flex-direction: column;
     text-shadow: 1px 1px 1px black;
@@ -218,4 +218,8 @@ footer ol li{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+button{
+    outline:none;
 }
